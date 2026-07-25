@@ -1,0 +1,7 @@
+title: "Friday Felt"
+description: "Friday Night Poker Tour"
+theme: just-the-docs
+baseurl: "/fridayfelt" # Name of your repo
+url: "https://mrwayneo.github.io"
+search_enabled: true
+
