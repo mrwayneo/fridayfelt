@@ -172,28 +172,28 @@ layout: "Null"
             </div>
             <div class="leader-row is-leader" role="row">
               <span class="rank"><i>1</i></span>
-              <span class="player"><b class="player-avatar avatar-purple">A</b><span><strong>Alex</strong><small>1 win</small></span></span>
-              <span>2</span><strong class="points">11</strong>
-            </div>
-            <div class="leader-row" role="row">
-              <span class="rank">2</span>
-              <span class="player"><b class="player-avatar avatar-pink">E</b><span><strong>Emma</strong><small>Best: 2nd</small></span></span>
-              <span>2</span><strong class="points">8</strong>
-            </div>
-            <div class="leader-row" role="row">
-              <span class="rank">3</span>
-              <span class="player"><b class="player-avatar avatar-blue">W</b><span><strong>Wayne</strong><small>1 win</small></span></span>
+              <span class="player"><b class="player-avatar avatar-purple">M</b><span><strong>Miki</strong><small>1 win</small></span></span>
               <span>2</span><strong class="points">7</strong>
             </div>
             <div class="leader-row" role="row">
+              <span class="rank">2</span>
+              <span class="player"><b class="player-avatar avatar-pink">K</b><span><strong>Kahlia</strong><small>1 win</small></span></span>
+              <span>2</span><strong class="points">7</strong>
+            </div>
+            <div class="leader-row" role="row">
+              <span class="rank">3</span>
+              <span class="player"><b class="player-avatar avatar-blue">K</b><span><strong>KB</strong><small>Best: 2nd</small></span></span>
+              <span>2</span><strong class="points">5</strong>
+            </div>
+            <div class="leader-row" role="row">
               <span class="rank">4</span>
-              <span class="player"><b class="player-avatar avatar-green">S</b><span><strong>Sophie</strong><small>Best: 3rd</small></span></span>
+              <span class="player"><b class="player-avatar avatar-green">A</b><span><strong>Ariel</strong><small>Best: 3rd</small></span></span>
               <span>2</span><strong class="points">4</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">5</span>
-              <span class="player"><b class="player-avatar avatar-orange">G</b><span><strong>Guest Player</strong><small>Best: 4th</small></span></span>
-              <span>1</span><strong class="points">1</strong>
+              <span class="player"><b class="player-avatar avatar-orange">W</b><span><strong>Wayneo</strong><small>Best: 2nd</small></span></span>
+              <span>1</span><strong class="points">4</strong>
             </div>
           </div>
           <div class="panel-note">
@@ -210,10 +210,10 @@ layout: "Null"
           <h3>Friday Night Poker #3</h3>
           <p class="event-subtitle">The cards are almost in the air.</p>
           <dl class="event-details">
-            <div><dt>Date</dt><dd>Friday, 31 July</dd></div>
+            <div><dt>Date</dt><dd>Sunday, 26 July</dd></div>
             <div><dt>Cards in the air</dt><dd>7:00 pm</dd></div>
             <div><dt>Starting stack</dt><dd>2,100</dd></div>
-            <div><dt>Blind levels</dt><dd>15 minutes</dd></div>
+            <div><dt>Blind levels</dt><dd>20 minutes</dd></div>
           </dl>
           <div class="lesson-callout">
             <span>THIS WEEK'S LESSON</span>
