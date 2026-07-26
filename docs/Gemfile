@@ -6,5 +6,5 @@ gem "jekyll-remote-theme", "~> 0.4.3"
 gem "jekyll-seo-tag"
 gem "webrick"
 
-# Keeps local builds compatible with the Ruby version bundled with macOS.
+# Keeps local builds compatible with the Ruby version bundled with macOS..
 gem "ffi", "1.15.5"
