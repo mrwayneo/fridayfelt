@@ -1,10 +1,58 @@
-title: "Friday Felt"
-description: "Friday Night Poker Tour"
-theme: just-the-docs
-baseurl: "/fridayfelt" # Name of your repo
-url: "https://mrwayneo.github.io"
+title: Friday Felt
+description: Turn poker night into a tradition.
+url: ""
+baseurl: ""
+
+remote_theme: just-the-docs/just-the-docs@v0.12.0
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+color_scheme: friday-felt
 search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+heading_anchors: true
+nav_sort: case_insensitive
+back_to_top: true
+back_to_top_text: "Back to the top"
+footer_content: ""
+last_edit_timestamp: false
 
+callouts:
+  lesson:
+    title: Poker night lesson
+    color: purple
+  table_tip:
+    title: At the table
+    color: green
+  champion:
+    title: Champion tradition
+    color: yellow
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: "index.html"
+    values:
+      layout: null
+      nav_exclude: true
+
+exclude:
+  - AGENTS.md
+  - sources/
+  - vendor/
+  - node_modules/
+  - README.md
