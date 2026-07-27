@@ -57,6 +57,25 @@ a { color: inherit; text-decoration: none; }
   border-right: 1px solid var(--border);
   backdrop-filter: blur(20px);
 }
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 40px;
+  max-width: 190px;
+  object-fit: contain;
+}
+
+.mobile-header .brand-logo {
+  height: 34px;
+  max-width: 160px;
+}
+
+footer .brand-logo {
+  height: 34px;
+  max-width: 165px;
+}
+
 .brand { display: inline-flex; align-items: center; gap: 12px; }
 .brand-mark {
   position: relative;

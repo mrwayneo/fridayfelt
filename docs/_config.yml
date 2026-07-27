@@ -1,11 +1,11 @@
 title: Friday Felt
 description: Turn poker night into a tradition.
-url: ""
-baseurl: ""
+url: "https://mrwayneo.github.io"
+baseurl: "/fridayfelt"
 
 remote_theme: just-the-docs/just-the-docs@v0.12.0
 
-logo: "/fridayfelt/assets/images/friday-felt-logo.png"
+logo: "/assets/images/friday-felt-logo.png"
 
 plugins:
   - jekyll-remote-theme
