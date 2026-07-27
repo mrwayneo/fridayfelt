@@ -9,6 +9,7 @@ description: Results from every Friday Night Poker Tour event.
 Every finish contributes to the story of the season.
 {: .ff-page-intro }
 
+
 | Rank | Player | E1  | E2  | E3  | Total  |
 | ---- | ------ | --- | --- | --- | ------ |
 | T-1  | Wayne  | 3   | 1   | 8   | **12** |
@@ -17,6 +18,7 @@ Every finish contributes to the story of the season.
 | 4    | KB     | 1   | 4   | 1   | **6**  |
 | 5    | Ariel  | 2   | 2   | 1   | **5**  |
 | 6    | Hudson | —   | —   | 1   | **1**  |
+
 ## Event 1
 
 | Finish | Player | Points |
