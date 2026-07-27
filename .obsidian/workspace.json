@@ -198,8 +198,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "e3155f70d08db9f4",
+  "active": "4a10ff93c53bfb59",
   "lastOpenFiles": [
+    "docs/assets/downloads/friday-felt-starter-pack.pdf",
+    "docs/assets/downloads",
+    "docs/resources/downloads.md",
+    "docs/lessons/starting-hands-and-position.md",
+    "docs/lessons/position-is-power.md",
     "docs/resources/first-poker-night.md",
     "docs/resources/gear.md",
     "docs/resources/blind-structures.md",
@@ -233,12 +238,9 @@
     "docs/sources",
     "docs/season-1",
     "docs/resources",
-    "docs/leaderboard",
     "docs/lessons/index.md",
     "docs/lessons/folding-is-a-skill.md",
     "docs/about/index.md",
-    "lessons/index.md",
-    "lessons/folding-is-a-skill.md",
-    "about/index.md"
+    "lessons/index.md"
   ]
 }

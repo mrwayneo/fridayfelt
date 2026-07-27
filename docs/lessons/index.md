@@ -17,10 +17,15 @@ Ten minutes before the cards are dealt. One idea to notice during play. One ques
     <strong>Folding is a skill</strong>
     <small>Build patience and celebrate disciplined decisions.</small>
   </a>
-  <a class="ff-doc-card" href="{{ '/tour/next-event/' | relative_url }}">
+  <a class="ff-doc-card" href="{{ '/lessons/position-is-power/' | relative_url }}">
     <span class="ff-doc-card__icon">02</span>
     <strong>Position is power</strong>
     <small>Notice the button before making a decision.</small>
+  </a>
+  <a class="ff-doc-card" href="{{ '/lessons/starting-hands-and-position/' | relative_url }}">
+  <span class="ff-doc-card__icon">03</span>
+  <strong>Starting hands change with position</strong>
+  <small>Play strongest early and consider more options when acting late.</small>
   </a>
 </div>
 

@@ -27,5 +27,10 @@ Practical structures, simple explainers and printable tools for the kitchen tabl
     <strong>Poker Gear</strong>
     <small>Poker gear without the guesswork.</small>
   </a>
+  <a class="ff-doc-card" href="{{ '/resources/downloads/' | relative_url }}">
+    <span class="ff-doc-card__icon">↓</span>
+    <strong>Downloads</strong>
+    <small>Printable guides, score sheets, lesson cards and tournament packs.</small>
+  </a>
 </div>
 
