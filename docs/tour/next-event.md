@@ -6,7 +6,7 @@ description: Details for the next Friday Night Poker Tour event.
 permalink: /tour/next-event/
 ---
 
-# Friday Night Poker #3
+# Friday Night Poker #4
 
 The cards are almost in the air.
 {: .ff-page-intro }

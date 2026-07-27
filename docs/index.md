@@ -61,7 +61,7 @@ layout: "Null"
       <span class="mini-chip">♠</span>
       <p>Friday Night Poker Tour</p>
       <strong>Season 1</strong>
-      <span>Event 3 of 12</span>
+      <span>Event 4 of 12</span>
       <div class="season-progress"><i style="width: 25%"></i></div>
     </div>
 

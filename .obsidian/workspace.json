@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/resources/index.md",
+                "file": "docs/tour/next-event.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "next-event"
             }
           }
         ],
@@ -200,7 +200,10 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
+    "docs/tour/index.md",
+    "docs/tour/next-event.md",
     "docs/season-1/results/index.md",
+    "docs/resources/index.md",
     "docs/resources/gear.md",
     "docs/leaderboard/index.md",
     "docs/assets/images/friday-felt-logo.png.sb-58bf6e5b-7TRZFH",
@@ -212,7 +215,6 @@
     "docs/assets/images",
     "docs/assets/untitled folder",
     "docs/roadmap/index.md",
-    "docs/resources/index.md",
     "docs/champions/index.md",
     "docs/index.md",
     "docs/Resources.md",
@@ -225,8 +227,6 @@
     "docs/contact/index.md",
     "docs/Friday Night Poker Tour/Leaderboard.md",
     "docs/Friday Night Poker Tour/Friday Night Poker Tour.md",
-    "docs/tour/next-event.md",
-    "docs/tour/index.md",
     "docs/season-1/results",
     "docs/tour",
     "docs/roadmap",
