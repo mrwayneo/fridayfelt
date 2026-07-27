@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/season-1/results/index.md",
+                "file": "docs/resources/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -200,9 +200,9 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
+    "docs/season-1/results/index.md",
     "docs/resources/gear.md",
     "docs/leaderboard/index.md",
-    "docs/season-1/results/index.md",
     "docs/assets/images/friday-felt-logo.png.sb-58bf6e5b-7TRZFH",
     "docs/assets/images/friday-felt-logo-large.png",
     "docs/assets/images/friday-felt-logo-square.png",

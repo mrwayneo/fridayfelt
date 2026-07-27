@@ -22,5 +22,10 @@ Practical structures, simple explainers and printable tools for the kitchen tabl
     <strong>Blind structure</strong>
     <small>Balanced levels for three to nine players.</small>
   </a>
+    <a class="ff-doc-card" href="{{ '/resources/gear/' | relative_url }}">
+    <span class="ff-doc-card__icon">G</span>
+    <strong>Poker Gear</strong>
+    <small>Poker gear without the guesswork.</small>
+  </a>
 </div>
 
