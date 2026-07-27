@@ -70,8 +70,8 @@ layout: "Null"
 
   <header class="mobile-header">
     <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark" aria-hidden="true"><span>F</span><i>♠</i><span>F</span></span>
-      <span class="brand-name">Friday Felt</span>
+      <img class="brand-logo" src="{{ '/assets/images/friday-felt-logo.png' | relative_url }}" alt="Friday Felt">
+      <!--span class="brand-name">Friday Felt</span-->
     </a>
     <label class="menu-button" for="nav-toggle" aria-label="Open navigation"><span></span><span></span><span></span></label>
   </header>
@@ -272,8 +272,8 @@ layout: "Null"
 
   <footer>
     <a class="brand footer-brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark" aria-hidden="true"><span>F</span><i>♠</i><span>F</span></span>
-      <span class="brand-name">Friday Felt</span>
+      <img class="brand-logo" src="{{ '/assets/images/friday-felt-logo.png' | relative_url }}" alt="Friday Felt">
+      <!--span class="brand-name">Friday Felt</span-->
     </a>
     <p>Good game. Good people. Great memories.</p>
     <nav aria-label="Footer navigation">
