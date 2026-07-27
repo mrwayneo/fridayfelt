@@ -3,6 +3,7 @@ title: Poker Gear
 parent: Resources
 nav_order: 3
 description: A simple and affordable guide to choosing chips, cards and home poker essentials.
+permalink: /resources/gear/
 ---
 
 # Poker gear without the guesswork
