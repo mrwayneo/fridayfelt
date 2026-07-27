@@ -45,31 +45,12 @@ body {
   letter-spacing: -0.03em;
 }
 
-.site-title::before {
-  content: "FF";
-  width: 2.55rem;
-  height: 2.2rem;
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-  color: var(--ff-text);
-  background: linear-gradient(135deg, rgba(155, 107, 255, 0.28), rgba(155, 107, 255, 0.08));
-  border: 1px solid rgba(192, 170, 255, 0.25);
-  border-radius: 0.7rem;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.02);
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: -0.12em;
-}
-
-.site-title::after {
-  content: "♠";
-  position: absolute;
-  left: 2.6rem;
-  margin-top: 0.15rem;
-  color: var(--ff-purple-bright);
-  font-size: 0.48rem;
-  line-height: 1;
+.site-logo {
+  width: auto;
+  max-width: 190px;
+  height: auto;
+  max-height: 48px;
+  object-fit: contain;
 }
 
 .site-button {
@@ -479,8 +460,9 @@ body {
     padding-left: 1rem;
   }
 
-  .site-title::after {
-    left: 2.4rem;
+  .site-logo {
+    max-width: 155px;
+    max-height: 40px;
   }
 
   .main-content-wrap {
@@ -495,15 +477,6 @@ body {
 @media (max-width: 31.25rem) {
   .site-title {
     font-size: 0.9rem !important;
-  }
-
-  .site-title::before {
-    width: 2.25rem;
-    height: 1.95rem;
-  }
-
-  .site-title::after {
-    left: 2.25rem;
   }
 
   .ff-footer {

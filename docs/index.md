@@ -23,8 +23,8 @@ layout: "Null"
 
   <aside class="sidebar" aria-label="Primary navigation">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="Friday Felt home">
-      <span class="brand-mark" aria-hidden="true"><span>F</span><i>♠</i><span>F</span></span>
-      <span class="brand-name">Friday Felt</span>
+      <img class="brand-logo" src="{{ '/assets/images/friday-felt-logo.png' | relative_url }}" alt="Friday Felt">
+      <!--span class="brand-name">Friday Felt</span-->
     </a>
 
     <nav class="main-nav">
