@@ -58,11 +58,20 @@ a { color: inherit; text-decoration: none; }
   backdrop-filter: blur(20px);
 }
 
-.brand-logo {
+.sidebar > .brand {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.sidebar > .brand .brand-logo {
   display: block;
-  width: auto;
-  /* height: 40px;*/
-  max-width: 140px;
+  width: 128px;
+  height: 128px;
+  max-width: 100%;
+  max-height: none;
+  margin-inline: auto;
   object-fit: contain;
 }
 
