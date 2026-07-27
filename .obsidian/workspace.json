@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Resources.md",
+                "file": "docs/champions/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resources"
+              "title": "index"
             }
           }
         ],
@@ -200,27 +200,39 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
+    "docs/Resources.md",
+    "docs/champions/index.md",
+    "docs/Weekly Lessons.md",
+    "docs/Hall of Champions.md",
+    "docs/roadmap/index.md",
+    "docs/resources/first-poker-night.md",
+    "docs/resources/blind-structures.md",
+    "docs/sources/ChatGPT Image Jul 16, 2026 at 05_10_13 PM.png",
+    "docs/leaderboard/index.md",
+    "docs/getting-started/index.md",
+    "docs/contact/index.md",
+    "docs/Friday Night Poker Tour/Leaderboard.md",
+    "docs/Friday Night Poker Tour/Friday Night Poker Tour.md",
+    "docs/tour/next-event.md",
+    "docs/tour/index.md",
+    "docs/season-1/results/index.md",
+    "docs/season-1/results",
+    "docs/resources/index.md",
+    "docs/tour",
+    "docs/roadmap",
+    "docs/sources",
+    "docs/season-1",
+    "docs/resources",
+    "docs/leaderboard",
+    "docs/getting-started",
+    "docs/contact",
+    "docs/champions",
     "docs/lessons/index.md",
     "docs/lessons/folding-is-a-skill.md",
-    "docs/lessons",
     "docs/about/index.md",
-    "docs/about",
-    "docs/_sass/custom/setup.scss",
-    "docs/_sass/custom/custom.scss",
-    "docs/_sass/color_schemes/friday-felt.scss",
-    "docs/_sass/custom",
-    "docs/_sass/color_schemes",
-    "docs/_sass",
-    "docs/_includes/search_placeholder_custom.html",
-    "docs/_includes/nav_footer_custom.html",
     "lessons/index.md",
     "lessons/folding-is-a-skill.md",
     "about/index.md",
-    "docs/index.md",
-    "docs/Resources.md",
-    "docs/Weekly Lessons.md",
-    "docs/Hall of Champions.md",
-    "docs/Friday Night Poker Tour/Leaderboard.md",
-    "docs/Friday Night Poker Tour/Friday Night Poker Tour.md"
+    "docs/index.md"
   ]
 }
