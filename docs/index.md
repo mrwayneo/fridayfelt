@@ -90,7 +90,7 @@ layout: "Null"
         </div>
         <div class="hero-proof">
           <div class="avatar-stack" aria-hidden="true">
-            <span>W</span><span>A</span><span>E</span><span>J</span>
+            <span>M</span><span>K</span><span>A</span><span>K</span>
           </div>
           <p><strong>Built around a real family table</strong><br>Play. Learn. Compete.</p>
         </div>
