@@ -10,12 +10,12 @@ Three points enter the pool for every player, then the full pool is distributed 
 {: .ff-page-intro }
 
 | Rank | Player | Played | Wins | Points |
-|---:|:--|---:|---:|---:|
-| 1 | Alex | 2 | 1 | **11** |
-| 2 | Emma | 2 | 0 | **8** |
-| 3 | Wayne | 2 | 1 | **7** |
-| 4 | Sophie | 2 | 0 | **4** |
-| 5 | Guest Player | 1 | 0 | **1** |
+| ---: | :----- | -----: | ---: | -----: |
+|    1 | Miki   |      2 |    1 |  **7** |
+|    2 | Kahlia |      1 |    1 |      7 |
+|    3 | KB     |      2 |    0 |      5 |
+|    4 | Ariel  |      2 |    0 |  **4** |
+|    5 | Wayneo |      2 |    0 |      4 |
 
 ## Point distribution
 

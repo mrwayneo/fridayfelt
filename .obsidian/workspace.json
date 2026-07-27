@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/champions/index.md",
+                "file": "docs/season-1/results/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -200,24 +200,25 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
-    "docs/Resources.md",
+    "docs/roadmap/index.md",
+    "docs/resources/index.md",
+    "docs/leaderboard/index.md",
+    "docs/season-1/results/index.md",
     "docs/champions/index.md",
+    "docs/index.md",
+    "docs/Resources.md",
     "docs/Weekly Lessons.md",
     "docs/Hall of Champions.md",
-    "docs/roadmap/index.md",
     "docs/resources/first-poker-night.md",
     "docs/resources/blind-structures.md",
     "docs/sources/ChatGPT Image Jul 16, 2026 at 05_10_13 PM.png",
-    "docs/leaderboard/index.md",
     "docs/getting-started/index.md",
     "docs/contact/index.md",
     "docs/Friday Night Poker Tour/Leaderboard.md",
     "docs/Friday Night Poker Tour/Friday Night Poker Tour.md",
     "docs/tour/next-event.md",
     "docs/tour/index.md",
-    "docs/season-1/results/index.md",
     "docs/season-1/results",
-    "docs/resources/index.md",
     "docs/tour",
     "docs/roadmap",
     "docs/sources",
@@ -232,7 +233,6 @@
     "docs/about/index.md",
     "lessons/index.md",
     "lessons/folding-is-a-skill.md",
-    "about/index.md",
-    "docs/index.md"
+    "about/index.md"
   ]
 }
