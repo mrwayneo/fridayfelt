@@ -260,15 +260,13 @@ h1 em {
 .hero-proof strong { color: #c8c2d2; font-size: 11px; }
 
 .hero-table {
-  position: relative;
-  z-index: 1;
-  min-height: 520px;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
   overflow: hidden;
   isolation: isolate;
-  background: #0b0a12;
-  border: 1px solid rgba(205, 179, 255, .1);
-  border-radius: 28px;
-  box-shadow: 0 38px 80px rgba(0, 0, 0, .36);
+  pointer-events: none;
+  background: var(--bg);
 }
 .hero-table::before {
   content: "";
@@ -277,8 +275,13 @@ h1 em {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 74% 38%, rgba(166, 104, 255, .18), transparent 38%),
-    linear-gradient(90deg, rgba(12, 10, 19, .44), transparent 48%);
+    radial-gradient(circle at 76% 37%, rgba(166, 104, 255, .16), transparent 35%),
+    linear-gradient(90deg,
+      rgba(15, 14, 23, .98) 0%,
+      rgba(15, 14, 23, .92) 28%,
+      rgba(15, 14, 23, .68) 49%,
+      rgba(15, 14, 23, .18) 76%,
+      rgba(15, 14, 23, .08) 100%);
 }
 .hero-table::after {
   content: "";
@@ -286,7 +289,13 @@ h1 em {
   z-index: 2;
   inset: 0;
   pointer-events: none;
-  box-shadow: inset 0 0 110px 28px rgba(3, 2, 8, .72);
+  background:
+    linear-gradient(180deg,
+      rgba(15, 14, 23, .18) 0%,
+      transparent 25%,
+      transparent 68%,
+      rgba(15, 14, 23, .86) 100%),
+    radial-gradient(ellipse at center, transparent 45%, rgba(3, 2, 8, .38) 100%);
 }
 .hero-photo {
   position: absolute;
@@ -295,8 +304,8 @@ h1 em {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: 62% center;
-  filter: brightness(.82) contrast(1.06) saturate(.86);
+  object-position: right center;
+  filter: brightness(.78) contrast(1.05) saturate(.82);
 }
 
 .hero-glow { position: absolute; border-radius: 50%; filter: blur(1px); }
