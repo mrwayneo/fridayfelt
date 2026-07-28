@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/resources/downloads.md",
+                "file": "docs/lessons/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "downloads"
+              "title": "index"
             }
           }
         ],
@@ -200,8 +200,8 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
-    "docs/resources/gear.md",
     "docs/resources/downloads.md",
+    "docs/resources/gear.md",
     "docs/resources/blind-structures.md",
     "docs/tour/next-event.md",
     "docs/lessons/enter-the-pot-with-a-plan.md",

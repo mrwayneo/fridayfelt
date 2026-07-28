@@ -27,6 +27,11 @@ Ten minutes before the cards are dealt. One idea to notice during play. One ques
   <strong>Starting hands change with position</strong>
   <small>Play strongest early and consider more options when acting late.</small>
   </a>
+   <a class="ff-doc-card" href="{{ '/lessons/enter-the-pot-with-a-plan/' | relative_url }}">
+  <span class="ff-doc-card__icon">03</span>
+  <strong>Enter the pot with a plan</strong>
+  <small>Do not enter a pot just because calling is cheap. Enter because your hand, position and plan make sense.</small>
+  </a>
 </div>
 
 ## The ten-minute rhythm
