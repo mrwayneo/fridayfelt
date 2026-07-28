@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/lessons/index.md",
+                "file": "docs/tour/next-event.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "next-event"
             }
           }
         ],
@@ -200,6 +200,9 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
+    "docs/index.md",
+    "docs/tour/next-event.md",
+    "docs/lessons/index.md",
     "docs/assets/icons/friday-felt/two-cards.svg",
     "docs/assets/icons/friday-felt/trophy.svg",
     "docs/assets/icons/friday-felt/star.svg",
@@ -210,20 +213,17 @@
     "docs/assets/icons/friday-felt/house.svg",
     "docs/assets/icons/friday-felt/heart.svg",
     "docs/assets/icons/friday-felt/graduation-cap.svg",
-    "docs/assets/icons/friday-felt/download.svg",
     "docs/assets/icons/friday-felt/README.md",
     "docs/assets/icons/friday-felt",
     "docs/assets/icons",
     "docs/resources/downloads.md",
     "docs/resources/gear.md",
     "docs/resources/blind-structures.md",
-    "docs/tour/next-event.md",
     "docs/lessons/enter-the-pot-with-a-plan.md",
     "docs/lessons/starting-hands-and-position.md",
     "docs/lessons/position-is-power.md",
     "docs/lessons/play-the-decision-not-the-result.md",
     "docs/lessons/made-hands-and-draws.md",
-    "docs/lessons/index.md",
     "docs/lessons/folding-is-a-skill.md",
     "docs/lessons/count-your-outs.md",
     "docs/lessons/bluff-with-a-reason.md",
