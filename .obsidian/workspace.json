@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/leaderboard/index.md",
+                "file": "docs/tour/next-event.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "next-event"
             }
           }
         ],
@@ -200,16 +200,29 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
+    "docs/lessons/enter-the-pot-with-a-plan.md",
+    "docs/lessons/starting-hands-and-position.md",
+    "docs/lessons/position-is-power.md",
+    "docs/lessons/play-the-decision-not-the-result.md",
+    "docs/lessons/made-hands-and-draws.md",
+    "docs/lessons/index.md",
+    "docs/lessons/folding-is-a-skill.md",
+    "docs/lessons/count-your-outs.md",
+    "docs/lessons/bluff-with-a-reason.md",
     "docs/season-1/results/index.md",
+    "docs/champions/index.md",
     "docs/leaderboard/index.md",
+    "docs/lessons/stack-size-changes-the-plan.md",
+    "docs/lessons/read-the-board.md",
+    "docs/lessons/pot-odds-made-simple.md",
+    "docs/lessons/bet-for-value.md",
+    "docs/assets/downloads/dealer-and-hand-ranking-guide.pdf",
     "docs/tour/index.md",
     "docs/tour/next-event.md",
     "docs/resources/gear.md",
     "docs/assets/downloads/friday-felt-starter-pack.pdf",
     "docs/assets/downloads",
     "docs/resources/downloads.md",
-    "docs/lessons/starting-hands-and-position.md",
-    "docs/lessons/position-is-power.md",
     "docs/resources/first-poker-night.md",
     "docs/resources/blind-structures.md",
     "docs/resources/index.md",
@@ -222,24 +235,12 @@
     "docs/assets/images",
     "docs/assets/untitled folder",
     "docs/roadmap/index.md",
-    "docs/champions/index.md",
     "docs/index.md",
     "docs/Resources.md",
-    "docs/Weekly Lessons.md",
-    "docs/Hall of Champions.md",
     "docs/sources/ChatGPT Image Jul 16, 2026 at 05_10_13 PM.png",
-    "docs/getting-started/index.md",
-    "docs/contact/index.md",
-    "docs/Friday Night Poker Tour/Leaderboard.md",
-    "docs/Friday Night Poker Tour/Friday Night Poker Tour.md",
     "docs/season-1/results",
     "docs/tour",
     "docs/roadmap",
-    "docs/sources",
-    "docs/season-1",
-    "docs/lessons/index.md",
-    "docs/lessons/folding-is-a-skill.md",
-    "docs/about/index.md",
-    "lessons/index.md"
+    "docs/sources"
   ]
 }

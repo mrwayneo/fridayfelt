@@ -11,13 +11,13 @@ permalink: /tour/next-event/
 The cards are almost in the air.
 {: .ff-page-intro }
 
-| Detail | Event information |
-|:--|:--|
-| Date | Friday, 31 July 2026 |
-| Cards in the air | 7:00 pm |
-| Starting stack | 2,100 |
-| Blind levels | 15 minutes |
-| Lesson | Position is power |
+| Detail           | Event information         |
+| :--------------- | :------------------------ |
+| Date             | Friday, 31 July 2026      |
+| Cards in the air | 7:00 pm                   |
+| Starting stack   | 2,100                     |
+| Blind levels     | 15 minutes                |
+| Lesson           | Enter the Pot With a Plan |
 
 {: .lesson }
-Before looking at your cards, identify the dealer button and say whether you are early, middle or late.
+Do not enter a pot just because calling is cheap. Enter because your hand, position and plan make sense.

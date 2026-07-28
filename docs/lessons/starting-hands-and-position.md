@@ -4,8 +4,8 @@ parent: Poker School
 nav_order: 3
 description: A ten-minute beginner lesson about choosing starting hands according to position.
 permalink: /lessons/starting-hands-and-position/
-published: false
-nav_exclude: true
+published: true
+nav_exclude: false
 ---
 
 # Starting hands change with position

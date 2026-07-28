@@ -172,28 +172,33 @@ layout: "Null"
             </div>
             <div class="leader-row is-leader" role="row">
               <span class="rank"><i>1</i></span>
-              <span class="player"><b class="player-avatar avatar-purple">M</b><span><strong>Miki</strong><small>1 win</small></span></span>
-              <span>2</span><strong class="points">7</strong>
+              <span class="player"><b class="player-avatar avatar-purple">K</b><span><strong>Kahlia</strong><small>1 win</small></span></span>
+              <span>2</span><strong class="points">12</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">2</span>
-              <span class="player"><b class="player-avatar avatar-pink">K</b><span><strong>Kahlia</strong><small>1 win</small></span></span>
-              <span>2</span><strong class="points">7</strong>
+              <span class="player"><b class="player-avatar avatar-pink">W</b><span><strong>Wayneo</strong><small>1 win</small></span></span>
+              <span>2</span><strong class="points">12</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">3</span>
-              <span class="player"><b class="player-avatar avatar-blue">K</b><span><strong>KB</strong><small>Best: 2nd</small></span></span>
-              <span>2</span><strong class="points">5</strong>
+              <span class="player"><b class="player-avatar avatar-blue">M</b><span><strong>Miki</strong><small>Best: 2nd</small></span></span>
+              <span>2</span><strong class="points">9</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">4</span>
-              <span class="player"><b class="player-avatar avatar-green">A</b><span><strong>Ariel</strong><small>Best: 3rd</small></span></span>
-              <span>2</span><strong class="points">4</strong>
+              <span class="player"><b class="player-avatar avatar-green">K</b><span><strong>KB</strong><small>Best: 3rd</small></span></span>
+              <span>2</span><strong class="points">6</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">5</span>
-              <span class="player"><b class="player-avatar avatar-orange">W</b><span><strong>Wayneo</strong><small>Best: 2nd</small></span></span>
-              <span>1</span><strong class="points">4</strong>
+              <span class="player"><b class="player-avatar avatar-orange">A</b><span><strong>Ariel</strong><small>Best: 2nd</small></span></span>
+              <span>1</span><strong class="points">5</strong>
+            </div>
+            <div class="leader-row" role="row">
+              <span class="rank">6</span>
+              <span class="player"><b class="player-avatar avatar-orange">H</b><span><strong>Hudson</strong><small>Best: 2nd</small></span></span>
+              <span>1</span><strong class="points">1</strong>
             </div>
           </div>
           <div class="panel-note">
@@ -207,18 +212,18 @@ layout: "Null"
             <span class="calendar-icon"><b>FRI</b><strong>31</strong></span>
             <span class="event-status">NEXT TOURNAMENT</span>
           </div>
-          <h3>Friday Night Poker #3</h3>
+          <h3>Friday Night Poker #4</h3>
           <p class="event-subtitle">The cards are almost in the air.</p>
           <dl class="event-details">
-            <div><dt>Date</dt><dd>Sunday, 26 July</dd></div>
+            <div><dt>Date</dt><dd>Friday, 31 July</dd></div>
             <div><dt>Cards in the air</dt><dd>7:00 pm</dd></div>
             <div><dt>Starting stack</dt><dd>2,100</dd></div>
             <div><dt>Blind levels</dt><dd>20 minutes</dd></div>
           </dl>
           <div class="lesson-callout">
             <span>THIS WEEK'S LESSON</span>
-            <strong>Position is power</strong>
-            <p>Notice where the dealer button is before every hand.</p>
+            <strong>Enter the Pot With a Plan</strong>
+            <p>Do not enter a pot just because calling is cheap. Enter because your hand, position and plan make sense.</p>
           </div>
           <a class="button button-primary event-button" href="{{ '/tour/next-event/' | relative_url }}">View tournament details <span>→</span></a>
         </article>
