@@ -30,30 +30,30 @@ layout: "Null"
     <nav class="main-nav">
       <p class="nav-label">Explore</p>
       <a class="nav-item active" href="{{ '/' | relative_url }}" aria-current="page">
-        <span class="nav-icon">⌂</span> Home
+        <span class="nav-icon ff-icon ff-icon-house" aria-hidden="true"></span> Home
       </a>
       <a class="nav-item" href="{{ '/getting-started/' | relative_url }}">
-        <span class="nav-icon">♠</span> Getting Started
+        <span class="nav-icon ff-icon ff-icon-two-cards" aria-hidden="true"></span> Getting Started
       </a>
       <a class="nav-item" href="{{ '/tour/' | relative_url }}">
-        <span class="nav-icon">◇</span> Poker Tour
+        <span class="nav-icon ff-icon ff-icon-spade" aria-hidden="true"></span> Poker Tour
       </a>
       <a class="nav-item" href="{{ '/leaderboard/' | relative_url }}">
-        <span class="nav-icon">↗</span> Leaderboard
+        <span class="nav-icon ff-icon ff-icon-trophy" aria-hidden="true"></span> Leaderboard
       </a>
       <a class="nav-item" href="{{ '/lessons/' | relative_url }}">
-        <span class="nav-icon">◎</span> Poker School
+        <span class="nav-icon ff-icon ff-icon-graduation-cap" aria-hidden="true"></span> Poker School
       </a>
       <a class="nav-item" href="{{ '/resources/' | relative_url }}">
-        <span class="nav-icon">▤</span> Resources
+        <span class="nav-icon ff-icon ff-icon-open-book" aria-hidden="true"></span> Resources
       </a>
 
       <p class="nav-label nav-label-spaced">Season 1</p>
       <a class="nav-item" href="{{ '/season-1/results/' | relative_url }}">
-        <span class="nav-icon">✓</span> Match Results
+        <span class="nav-icon ff-icon ff-icon-results" aria-hidden="true"></span> Match Results
       </a>
       <a class="nav-item" href="{{ '/champions/' | relative_url }}">
-        <span class="nav-icon">★</span> Hall of Champions
+        <span class="nav-icon ff-icon ff-icon-crown" aria-hidden="true"></span> Hall of Champions
       </a>
     </nav>
 
@@ -120,21 +120,21 @@ layout: "Null"
 
       <div class="feature-grid">
         <a class="feature-card feature-purple" href="{{ '/tour/' | relative_url }}">
-          <span class="feature-icon">♠</span>
+          <span class="feature-icon ff-icon ff-icon-two-cards" aria-hidden="true"></span>
           <span class="card-tag">PLAY</span>
           <h3>Run your league</h3>
           <p>Set up players, chips, blind levels, points and a season that keeps everyone coming back.</p>
           <span class="text-link">Explore the tour guide <b>→</b></span>
         </a>
         <a class="feature-card feature-blue" href="{{ '/lessons/' | relative_url }}">
-          <span class="feature-icon">◎</span>
+          <span class="feature-icon ff-icon ff-icon-graduation-cap" aria-hidden="true"></span>
           <span class="card-tag">LEARN</span>
           <h3>Build confidence</h3>
           <p>Teach one clear poker idea each week with short lessons and table challenges.</p>
           <span class="text-link">Visit poker school <b>→</b></span>
         </a>
         <a class="feature-card feature-gold" href="{{ '/champions/' | relative_url }}">
-          <span class="feature-icon">★</span>
+          <span class="feature-icon ff-icon ff-icon-heart" aria-hidden="true"></span>
           <span class="card-tag">CELEBRATE</span>
           <h3>Create traditions</h3>
           <p>Recognise winners with a card protector, season bracelet and a family trophy.</p>

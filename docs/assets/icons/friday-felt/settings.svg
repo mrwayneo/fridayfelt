@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <title>Friday Felt Settings</title>
+  <path d="M26 8h12l2 8 7-4 8 8-4 7 8 2v12l-8 2 4 7-8 8-7-4-2 8H26l-2-8-7 4-8-8 4-7-8-2V29l8-2-4-7 8-8 7 4 2-8Z"/>
+  <circle cx="32" cy="35" r="9"/>
+  <path d="m32 29 3 5-3 5-3-5 3-5Z"/>
+</svg>
