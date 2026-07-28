@@ -30,3 +30,28 @@ permalink: /resources/downloads/
     </a>
   </div>
 </div>
+
+<div class="ff-download-card">
+  <span class="ff-download-card__type">PDF · 3 PAGES</span>
+  <h3>Dealer and Hand-Ranking Guide</h3>
+  <p>All ten hand rankings with illustrated cards.</p>
+
+  <div class="ff-download-card__actions">
+    <a
+      class="btn btn-primary"
+      href="{{ '/assets/downloads/dealer-and-hand-ranking-guide.pdf' | relative_url }}"
+      download
+    >
+      Download PDF
+    </a>
+
+    <a
+      class="btn"
+      href="{{ '/assets/downloads/dealer-and-hand-ranking-guide.pdf' | relative_url }}"
+      target="_blank"
+      rel="noopener"
+    >
+      Preview
+    </a>
+  </div>
+</div>

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/tour/next-event.md",
+                "file": "docs/resources/downloads.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "next-event"
+              "title": "downloads"
             }
           }
         ],
@@ -200,6 +200,10 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
+    "docs/resources/gear.md",
+    "docs/resources/downloads.md",
+    "docs/resources/blind-structures.md",
+    "docs/tour/next-event.md",
     "docs/lessons/enter-the-pot-with-a-plan.md",
     "docs/lessons/starting-hands-and-position.md",
     "docs/lessons/position-is-power.md",
@@ -218,13 +222,9 @@
     "docs/lessons/bet-for-value.md",
     "docs/assets/downloads/dealer-and-hand-ranking-guide.pdf",
     "docs/tour/index.md",
-    "docs/tour/next-event.md",
-    "docs/resources/gear.md",
     "docs/assets/downloads/friday-felt-starter-pack.pdf",
     "docs/assets/downloads",
-    "docs/resources/downloads.md",
     "docs/resources/first-poker-night.md",
-    "docs/resources/blind-structures.md",
     "docs/resources/index.md",
     "docs/assets/images/friday-felt-logo.png.sb-58bf6e5b-7TRZFH",
     "docs/assets/images/friday-felt-logo-large.png",
