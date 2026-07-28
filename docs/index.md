@@ -96,21 +96,16 @@ layout: "Null"
         </div>
       </div>
 
-      <div class="hero-table" aria-label="Stylised poker table">
-        <div class="table-orbit orbit-one"></div>
-        <div class="table-orbit orbit-two"></div>
-        <div class="playing-card card-one"><span>A</span><b>♠</b></div>
-        <div class="playing-card card-two"><span>K</span><b>♥</b></div>
-        <div class="poker-table">
-          <div class="felt-inner">
-            <span class="table-spade">♠</span>
-            <strong>FRIDAY FELT</strong>
-            <small>PLAY · LEARN · COMPETE</small>
-          </div>
-        </div>
-        <div class="chip-stack chips-left"><i></i><i></i><i></i><i></i></div>
-        <div class="chip-stack chips-right"><i></i><i></i><i></i></div>
-        <div class="dealer-chip">D</div>
+      <div class="hero-table">
+        <img
+          class="hero-photo"
+          src="{{ '/assets/images/friday-felt-hero-v3.webp' | relative_url }}"
+          width="1536"
+          height="1024"
+          alt="Poker chips and a deck of cards on a dark felt table"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
       </div>
     </section>
 
