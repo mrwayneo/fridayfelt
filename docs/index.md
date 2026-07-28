@@ -177,7 +177,7 @@ layout: "Null"
             </div>
             <div class="leader-row" role="row">
               <span class="rank">3</span>
-              <span class="player"><b class="player-avatar avatar-blue">M</b><span><strong>Miki</strong><small>Best: 2nd</small></span></span>
+              <span class="player"><b class="player-avatar avatar-blue">M</b><span><strong>Miki</strong><small>1 win</small></span></span>
               <span>2</span><strong class="points">9</strong>
             </div>
             <div class="leader-row" role="row">
@@ -187,12 +187,12 @@ layout: "Null"
             </div>
             <div class="leader-row" role="row">
               <span class="rank">5</span>
-              <span class="player"><b class="player-avatar avatar-orange">A</b><span><strong>Ariel</strong><small>Best: 2nd</small></span></span>
+              <span class="player"><b class="player-avatar avatar-orange">A</b><span><strong>Ariel</strong><small>Best: 3rd</small></span></span>
               <span>1</span><strong class="points">5</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">6</span>
-              <span class="player"><b class="player-avatar avatar-orange">H</b><span><strong>Hudson</strong><small>Best: 2nd</small></span></span>
+              <span class="player"><b class="player-avatar avatar-orange">H</b><span><strong>Hudson</strong><small>Best: 6th</small></span></span>
               <span>1</span><strong class="points">1</strong>
             </div>
           </div>
