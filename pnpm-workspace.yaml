@@ -1,3 +1,9 @@
 packages:
   - "apps/*"
   - "packages/*"
+
+# These exact versions were reviewed when the application foundation was added.
+# pnpm's release-age policy otherwise rejects them until the safety window passes.
+minimumReleaseAgeExclude:
+  - "react-router-dom@7.18.2"
+  - "react-router@7.18.2"
