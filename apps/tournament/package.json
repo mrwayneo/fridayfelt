@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "test": "vitest run src/presets.test.ts",
     "typecheck": "tsc -b"
   },
   "dependencies": {

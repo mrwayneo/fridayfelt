@@ -8,10 +8,22 @@ import {
 import {
   getCurrentLevel,
   type BlindLevel,
+  type BlindStructure,
   type TournamentCommand,
 } from "@friday-felt/tournament-domain";
 import { Navigate, NavLink, Route, Routes, useNavigate } from "react-router-dom";
-import { fridayFeltStructure } from "./presets";
+import {
+  cloneStructure,
+  fridayFeltStructure,
+  MINUTE,
+  structureDuration,
+  structurePresets,
+  withPlayDuration,
+} from "./presets";
+import {
+  loadCustomStructure,
+  saveCustomStructure,
+} from "./storage";
 import { useTournament } from "./tournament-context";
 
 type IconName =
@@ -133,10 +145,48 @@ function TournamentSetup() {
   const { create } = useTournament();
   const [name, setName] = useState("Friday Night Poker Tour · Event 1");
   const [startingStack, setStartingStack] = useState(2100);
+  const customStructure = loadCustomStructure();
+  const availableStructures = customStructure
+    ? [...structurePresets, customStructure]
+    : structurePresets;
+  const [structureId, setStructureId] = useState(fridayFeltStructure.id);
+  const selected =
+    availableStructures.find((structure) => structure.id === structureId) ??
+    fridayFeltStructure;
+  const selectedPlayMinutes = Math.round(
+    (selected.levels.find((level) => level.kind === "play")?.durationMs ??
+      15 * MINUTE) /
+      MINUTE,
+  );
+  const [playMinutes, setPlayMinutes] = useState<number | null>(null);
+  const displayedPlayMinutes = playMinutes ?? selectedPlayMinutes;
+  const tournamentStructure =
+    playMinutes === null
+      ? cloneStructure(selected)
+      : withPlayDuration(selected, playMinutes);
+  const playLevelCount = tournamentStructure.levels.filter(
+    (level) => level.kind === "play",
+  ).length;
+  const breakCount = tournamentStructure.levels.length - playLevelCount;
+  const totalMinutes = Math.round(
+    structureDuration(tournamentStructure) / MINUTE,
+  );
 
   function submit(event: FormEvent) {
     event.preventDefault();
-    create(name.trim() || "Friday Felt Tournament", startingStack);
+    create(
+      name.trim() || "Friday Felt Tournament",
+      startingStack,
+      tournamentStructure,
+    );
+  }
+
+  function chooseStructure(id: string) {
+    const structure =
+      availableStructures.find((item) => item.id === id) ??
+      fridayFeltStructure;
+    setStructureId(id);
+    setPlayMinutes(null);
   }
 
   return (
@@ -168,15 +218,60 @@ function TournamentSetup() {
             onChange={(event) => setStartingStack(Number(event.target.value))}
           />
         </label>
+        <div className="setup-form__row">
+          <label>
+            Structure
+            <select
+              value={structureId}
+              onChange={(event) => chooseStructure(event.target.value)}
+            >
+              {availableStructures.map((structure) => (
+                <option key={structure.id} value={structure.id}>
+                  {structure.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Round length
+            <select
+              value={displayedPlayMinutes}
+              onChange={(event) => setPlayMinutes(Number(event.target.value))}
+            >
+              {[10, 15, 20, 25, 30].map((minutes) => (
+                <option key={minutes} value={minutes}>
+                  {minutes} minutes
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
         <div className="structure-summary">
-          <span>{fridayFeltStructure.name}</span>
-          <strong>8 levels · 1 break · 2 hours 5 minutes</strong>
+          <span>{tournamentStructure.name}</span>
+          <strong>
+            {playLevelCount} levels · {breakCount} break
+            {breakCount === 1 ? "" : "s"} · {totalMinutes} minutes
+          </strong>
         </div>
         <button className="button button--primary" type="submit">
           Create tournament <span aria-hidden="true">→</span>
         </button>
+        <NavLink className="setup-form__customize" to="/structures">
+          Edit individual levels
+        </NavLink>
       </form>
     </section>
+  );
+}
+
+function ChipGuide({ compact = false }: { compact?: boolean }) {
+  return (
+    <div className={`chip-guide${compact ? " chip-guide--compact" : ""}`}>
+      <span className="chip-guide__label">Chip values</span>
+      <span className="chip chip--green">25</span>
+      <span className="chip chip--black">100</span>
+      <span className="chip chip--purple">500</span>
+    </div>
   );
 }
 
@@ -232,7 +327,7 @@ function TimerControls({
 }
 
 function LiveTimer() {
-  const { tournament, remainingMs, command, clear } = useTournament();
+  const { tournament, remainingMs, command, clear, settings } = useTournament();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -301,6 +396,7 @@ function LiveTimer() {
             <span>Up next</span>
             <strong>{next ? levelName(next) : "Tournament complete"}</strong>
           </div>
+          {settings.showChipGuide && <ChipGuide compact />}
         </div>
         <TimerControls command={command} status={status} />
       </section>
@@ -423,6 +519,7 @@ function DisplayPage() {
         <span>Next</span>
         <strong>{next ? levelName(next) : "Tournament complete"}</strong>
       </div>
+      {settings.showChipGuide && <ChipGuide />}
       <div className="display-stage__actions">
         <button onClick={() => navigate("/control")}>Organiser controls</button>
         <button onClick={() => void toggleFullscreen()}>
@@ -434,35 +531,261 @@ function DisplayPage() {
 }
 
 function StructuresPage() {
+  const storedCustom = loadCustomStructure();
+  const [structure, setStructure] = useState<BlindStructure>(() =>
+    cloneStructure(storedCustom ?? fridayFeltStructure),
+  );
+  const [saved, setSaved] = useState(false);
+
+  function selectPreset(id: string) {
+    const preset =
+      structurePresets.find((item) => item.id === id) ?? fridayFeltStructure;
+    setStructure(cloneStructure(preset));
+    setSaved(false);
+  }
+
+  function updateLevel(
+    index: number,
+    update: (level: BlindLevel) => BlindLevel,
+  ) {
+    setStructure((current) => ({
+      ...current,
+      levels: current.levels.map((level, levelIndex) =>
+        levelIndex === index ? update(level) : level,
+      ),
+    }));
+    setSaved(false);
+  }
+
+  function removeLevel(index: number) {
+    if (structure.levels.length <= 1) return;
+    setStructure((current) => ({
+      ...current,
+      levels: current.levels.filter((_, levelIndex) => levelIndex !== index),
+    }));
+    setSaved(false);
+  }
+
+  function addPlayLevel() {
+    const lastPlay = [...structure.levels]
+      .reverse()
+      .find((level) => level.kind === "play");
+    const smallBlind = lastPlay?.kind === "play" ? lastPlay.bigBlind : 25;
+    setStructure((current) => ({
+      ...current,
+      levels: [
+        ...current.levels,
+        {
+          id: `level-${Date.now()}`,
+          kind: "play",
+          durationMs: lastPlay?.durationMs ?? 15 * MINUTE,
+          smallBlind,
+          bigBlind: smallBlind * 2,
+        },
+      ],
+    }));
+    setSaved(false);
+  }
+
+  function addBreak() {
+    setStructure((current) => ({
+      ...current,
+      levels: [
+        ...current.levels,
+        {
+          id: `break-${Date.now()}`,
+          kind: "break",
+          durationMs: 5 * MINUTE,
+          label: "Break",
+        },
+      ],
+    }));
+    setSaved(false);
+  }
+
+  function save() {
+    const custom = {
+      ...cloneStructure(structure),
+      id: "friday-felt-custom",
+      name: structure.name.trim() || "My Custom Structure",
+      version: Date.now(),
+    };
+    saveCustomStructure(custom);
+    setStructure(custom);
+    setSaved(true);
+  }
+
   return (
     <section className="app-page">
       <PageHeader
         eyebrow="Tournament setup"
-        title="Blind Structure"
-        description="The first official Friday Felt structure is designed for a relaxed four-to-nine-player family tournament."
-        badge="Built-in preset"
+        title="Blind Structures"
+        description="Choose a proven preset or adjust individual blinds, breaks and durations. Saved changes become available when creating your next tournament."
+        badge="Flexible setup"
       />
-      <div className="structure-table" role="table" aria-label="Blind structure">
-        <div className="structure-table__row structure-table__head" role="row">
-          <span>Level</span>
-          <span>Blinds</span>
-          <span>Duration</span>
+      <section className="structure-editor">
+        <div className="structure-editor__toolbar">
+          <label>
+            Start from preset
+            <select
+              value={
+                structurePresets.some((preset) => preset.id === structure.id)
+                  ? structure.id
+                  : ""
+              }
+              onChange={(event) => selectPreset(event.target.value)}
+            >
+              {storedCustom && <option value="">My Custom Structure</option>}
+              {structurePresets.map((preset) => (
+                <option key={preset.id} value={preset.id}>
+                  {preset.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="structure-editor__name">
+            Structure name
+            <input
+              value={structure.name}
+              onChange={(event) => {
+                setStructure({ ...structure, name: event.target.value });
+                setSaved(false);
+              }}
+            />
+          </label>
+          <button className="button button--primary" onClick={save}>
+            {saved ? "Saved" : "Save structure"}
+          </button>
         </div>
-        {fridayFeltStructure.levels.map((level, index) => (
-          <div
-            className={`structure-table__row${level.kind === "break" ? " is-break" : ""}`}
-            role="row"
-            key={level.id}
-          >
-            <span>{level.kind === "break" ? "Break" : index + 1}</span>
-            <strong>{levelName(level)}</strong>
-            <span>{Math.round(level.durationMs / 60_000)} minutes</span>
-          </div>
-        ))}
-      </div>
+
+        <div className="level-editor-list">
+          {structure.levels.map((level, index) => (
+            <div
+              className={`level-editor-row${level.kind === "break" ? " is-break" : ""}`}
+              key={level.id}
+            >
+              <span className="level-editor-row__number">
+                {level.kind === "break"
+                  ? "Break"
+                  : `L${
+                      structure.levels
+                        .slice(0, index + 1)
+                        .filter((item) => item.kind === "play").length
+                    }`}
+              </span>
+              {level.kind === "play" ? (
+                <div className="level-editor-row__blinds">
+                  <label>
+                    Small blind
+                    <input
+                      type="number"
+                      min="1"
+                      value={level.smallBlind}
+                      onChange={(event) =>
+                        updateLevel(index, (current) =>
+                          current.kind === "play"
+                            ? {
+                                ...current,
+                                smallBlind: Number(event.target.value),
+                              }
+                            : current,
+                        )
+                      }
+                    />
+                  </label>
+                  <span>/</span>
+                  <label>
+                    Big blind
+                    <input
+                      type="number"
+                      min="2"
+                      value={level.bigBlind}
+                      onChange={(event) =>
+                        updateLevel(index, (current) =>
+                          current.kind === "play"
+                            ? {
+                                ...current,
+                                bigBlind: Number(event.target.value),
+                              }
+                            : current,
+                        )
+                      }
+                    />
+                  </label>
+                  <label>
+                    Ante
+                    <input
+                      type="number"
+                      min="0"
+                      value={level.ante ?? 0}
+                      onChange={(event) =>
+                        updateLevel(index, (current) =>
+                          current.kind === "play"
+                            ? {
+                                ...current,
+                                ante: Number(event.target.value) || undefined,
+                              }
+                            : current,
+                        )
+                      }
+                    />
+                  </label>
+                </div>
+              ) : (
+                <label className="level-editor-row__label">
+                  Label
+                  <input
+                    value={level.label ?? "Break"}
+                    onChange={(event) =>
+                      updateLevel(index, (current) => ({
+                        ...current,
+                        label: event.target.value,
+                      }))
+                    }
+                  />
+                </label>
+              )}
+              <label className="level-editor-row__duration">
+                Minutes
+                <input
+                  type="number"
+                  min="1"
+                  max="180"
+                  value={Math.round(level.durationMs / MINUTE)}
+                  onChange={(event) =>
+                    updateLevel(index, (current) => ({
+                      ...current,
+                      durationMs: Math.max(1, Number(event.target.value)) * MINUTE,
+                    }))
+                  }
+                />
+              </label>
+              <button
+                className="level-editor-row__remove"
+                onClick={() => removeLevel(index)}
+                aria-label={`Remove ${levelName(level)}`}
+              >
+                ×
+              </button>
+            </div>
+          ))}
+        </div>
+        <div className="structure-editor__actions">
+          <button className="button button--secondary" onClick={addPlayLevel}>
+            + Add blind level
+          </button>
+          <button className="button button--secondary" onClick={addBreak}>
+            + Add break
+          </button>
+          <span>
+            {structure.levels.length} stages ·{" "}
+            {Math.round(structureDuration(structure) / MINUTE)} minutes
+          </span>
+        </div>
+      </section>
       <p className="page-note">
-        Custom structure editing will arrive after the live timer has been
-        proven during real events.
+        Structure changes apply to new tournaments. A tournament already in
+        progress keeps its original schedule.
       </p>
     </section>
   );
@@ -524,6 +847,24 @@ function SettingsPage() {
               updateSettings({
                 ...settings,
                 keepScreenAwake: event.target.checked,
+              })
+            }
+          />
+        </label>
+        <label className="setting-row">
+          <span>
+            <strong>Show chip values</strong>
+            <small>
+              Add a small 25, 100 and 500 chip-colour guide to timer displays.
+            </small>
+          </span>
+          <input
+            type="checkbox"
+            checked={settings.showChipGuide}
+            onChange={(event) =>
+              updateSettings({
+                ...settings,
+                showChipGuide: event.target.checked,
               })
             }
           />

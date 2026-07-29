@@ -15,8 +15,8 @@ import {
   transitionTournament,
   type Tournament,
   type TournamentCommand,
+  type BlindStructure,
 } from "@friday-felt/tournament-domain";
-import { fridayFeltStructure } from "./presets";
 import {
   deleteTournament,
   loadSettings,
@@ -31,7 +31,11 @@ interface TournamentContextValue {
   now: number;
   remainingMs: number;
   settings: TimerSettings;
-  create: (name: string, startingStack: number) => void;
+  create: (
+    name: string,
+    startingStack: number,
+    structure: BlindStructure,
+  ) => void;
   command: (command: TournamentCommand) => void;
   clear: () => void;
   updateSettings: (settings: TimerSettings) => void;
@@ -124,12 +128,16 @@ export function TournamentProvider({ children }: { children: ReactNode }) {
     }
   }, [playAlert, remainingMs, settings, tournament]);
 
-  const create = useCallback((name: string, startingStack: number) => {
+  const create = useCallback((
+    name: string,
+    startingStack: number,
+    structure: BlindStructure,
+  ) => {
     const created = createTournament({
       id: createId(),
       name,
       startingStack,
-      structure: fridayFeltStructure,
+      structure,
       now: Date.now(),
     });
     setTournament(created);

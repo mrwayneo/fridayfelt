@@ -200,6 +200,7 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
+    "apps/tournament/src/presets.test.ts",
     "packages/design-system/public/images/friday-felt-logo-square.png",
     "apps/tournament/src/tournament-context.tsx",
     "apps/tournament/src/storage.ts",
@@ -223,7 +224,6 @@
     "docs/assets/icons/friday-felt/two-cards.svg",
     "docs/assets/icons/friday-felt/trophy.svg",
     "docs/assets/icons/friday-felt/star.svg",
-    "docs/assets/icons/friday-felt/spade.svg",
     "docs/assets/icons/friday-felt/README.md",
     "docs/resources/downloads.md",
     "docs/resources/gear.md",

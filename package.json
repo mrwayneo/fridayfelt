@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "pnpm --filter @friday-felt/tournament-app dev",
     "build:app": "pnpm --filter @friday-felt/tournament-app build",
-    "test": "pnpm --filter @friday-felt/tournament-domain test",
+    "test": "pnpm --filter @friday-felt/tournament-domain test && pnpm --filter @friday-felt/tournament-app test",
     "typecheck": "pnpm --filter @friday-felt/tournament-app typecheck && pnpm --filter @friday-felt/tournament-domain typecheck"
   },
   "devDependencies": {
