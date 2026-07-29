@@ -40,6 +40,11 @@ interface TournamentContextValue {
 
 const TournamentContext = createContext<TournamentContextValue | null>(null);
 
+function createId(): string {
+  if (typeof crypto.randomUUID === "function") return crypto.randomUUID();
+  return `tournament-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
 function soundAlert(kind: "warning" | "level"): void {
   const AudioContextClass =
     window.AudioContext ??
@@ -121,14 +126,14 @@ export function TournamentProvider({ children }: { children: ReactNode }) {
 
   const create = useCallback((name: string, startingStack: number) => {
     const created = createTournament({
-      id: crypto.randomUUID(),
+      id: createId(),
       name,
       startingStack,
       structure: fridayFeltStructure,
       now: Date.now(),
     });
-    saveTournament(created);
     setTournament(created);
+    saveTournament(created);
   }, []);
 
   const command = useCallback(

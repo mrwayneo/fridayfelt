@@ -24,12 +24,21 @@ export function loadTournament(): Tournament | null {
   }
 }
 
-export function saveTournament(tournament: Tournament): void {
-  localStorage.setItem(TOURNAMENT_KEY, JSON.stringify(tournament));
+export function saveTournament(tournament: Tournament): boolean {
+  try {
+    localStorage.setItem(TOURNAMENT_KEY, JSON.stringify(tournament));
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 export function deleteTournament(): void {
-  localStorage.removeItem(TOURNAMENT_KEY);
+  try {
+    localStorage.removeItem(TOURNAMENT_KEY);
+  } catch {
+    // The in-memory tournament can still be cleared when storage is blocked.
+  }
 }
 
 export function loadSettings(): TimerSettings {
@@ -44,6 +53,9 @@ export function loadSettings(): TimerSettings {
 }
 
 export function saveSettings(settings: TimerSettings): void {
-  localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+  try {
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+  } catch {
+    // Preferences still apply for the current session when storage is blocked.
+  }
 }
-

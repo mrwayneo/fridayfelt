@@ -42,6 +42,13 @@ function levelStatus(level: BlindLevel): TournamentStatus {
   return level.kind === "break" ? "break" : "running";
 }
 
+function cloneStructure(structure: BlindStructure): BlindStructure {
+  return {
+    ...structure,
+    levels: structure.levels.map((level) => ({ ...level })),
+  };
+}
+
 export function createTournament(input: CreateTournamentInput): Tournament {
   assertStructure(input.structure);
 
@@ -58,7 +65,7 @@ export function createTournament(input: CreateTournamentInput): Tournament {
     createdAt: input.now,
     updatedAt: input.now,
     startingStack: input.startingStack,
-    structure: structuredClone(input.structure),
+    structure: cloneStructure(input.structure),
     runtime: {
       status: "idle",
       currentLevelIndex: 0,
