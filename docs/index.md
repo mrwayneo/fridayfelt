@@ -207,13 +207,13 @@ layout: "Null"
 
         <article class="panel next-event-card">
           <div class="event-top">
-            <span class="calendar-icon"><b>SAT</b><strong>1</strong></span>
+            <span class="calendar-icon"><b>FRI</b><strong>31</strong></span>
             <span class="event-status">NEXT TOURNAMENT</span>
           </div>
           <h3>Friday Night Poker #4</h3>
           <p class="event-subtitle">The cards are almost in the air.</p>
           <dl class="event-details">
-            <div><dt>Date</dt><dd>Saturday, 1 August</dd></div>
+            <div><dt>Date</dt><dd>Friday, 31 July</dd></div>
             <div><dt>Cards in the air</dt><dd>7:00 pm</dd></div>
             <div><dt>Starting stack</dt><dd>2,100</dd></div>
             <div><dt>Blind levels</dt><dd>20 minutes</dd></div>

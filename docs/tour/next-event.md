@@ -13,7 +13,7 @@ The cards are almost in the air.
 
 | Detail           | Event information         |
 | :--------------- | :------------------------ |
-| Date             | Saturday, 1 August 2026   |
+| Date             | Friday, 31 July 2026      |
 | Cards in the air | 7:00 pm                   |
 | Starting stack   | 2,100                     |
 | Blind levels     | 15 minutes                |
