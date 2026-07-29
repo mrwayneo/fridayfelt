@@ -291,6 +291,7 @@ export function reconcileTournament(
         remainingMs: Math.max(0, levelEnd - now),
         targetEndsAt: levelEnd,
         updatedAt: now,
+        revision: reconciled.runtime.revision + 1,
       },
     };
   }

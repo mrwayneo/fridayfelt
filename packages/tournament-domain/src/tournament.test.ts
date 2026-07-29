@@ -113,6 +113,22 @@ describe("tournament timer domain", () => {
     expect(reconciled.runtime.currentLevelIndex).toBe(1);
     expect(reconciled.runtime.status).toBe("break");
     expect(getRemainingMs(reconciled, now + 17 * MINUTE)).toBe(3 * MINUTE);
+    expect(reconciled.runtime.revision).toBe(2);
+  });
+
+  it("reconciles across several elapsed levels without timer drift", () => {
+    const now = 1_000_000;
+    const running = transitionTournament(
+      makeTournament(now),
+      { type: "START" },
+      now,
+    ).state;
+    const reconciled = reconcileTournament(running, now + 21 * MINUTE);
+
+    expect(reconciled.runtime.currentLevelIndex).toBe(2);
+    expect(reconciled.runtime.status).toBe("running");
+    expect(getRemainingMs(reconciled, now + 21 * MINUTE)).toBe(14 * MINUTE);
+    expect(reconciled.runtime.revision).toBe(3);
   });
 
   it("can skip levels and reset safely", () => {
