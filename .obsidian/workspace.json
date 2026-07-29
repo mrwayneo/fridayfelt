@@ -200,6 +200,7 @@
   },
   "active": "e3155f70d08db9f4",
   "lastOpenFiles": [
+    "packages/design-system/public/images/friday-felt-logo-square.png",
     "apps/tournament/src/tournament-context.tsx",
     "apps/tournament/src/storage.ts",
     "apps/tournament/src/presets.ts",
@@ -216,7 +217,6 @@
     "packages/tournament-domain/src/index.ts",
     "packages/design-system/public/images",
     "packages/design-system/public/icons",
-    "packages/design-system/src/tokens.css",
     "docs/index.md",
     "docs/tour/next-event.md",
     "docs/lessons/index.md",
