@@ -22,6 +22,11 @@ search:
   rel_url: true
   button: false
 
+nav_external_links:
+  - title: Tournament Console
+    url: "https://fridayfelt.com/app/"
+    hide_icon: false
+
 heading_anchors: true
 nav_sort: case_insensitive
 back_to_top: true

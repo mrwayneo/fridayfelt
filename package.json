@@ -1,0 +1,17 @@
+{
+  "name": "friday-felt",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "dev": "pnpm --filter @friday-felt/tournament-app dev",
+    "build:app": "pnpm --filter @friday-felt/tournament-app build",
+    "test": "pnpm --filter @friday-felt/tournament-domain test",
+    "typecheck": "pnpm --filter @friday-felt/tournament-app typecheck && pnpm --filter @friday-felt/tournament-domain typecheck"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.0.4",
+    "typescript": "7.0.2",
+    "vite": "8.1.5",
+    "vitest": "4.1.10"
+  }
+}

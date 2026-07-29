@@ -38,6 +38,9 @@ layout: "Null"
       <a class="nav-item" href="{{ '/tour/' | relative_url }}">
         <span class="nav-icon ff-icon ff-icon-spade" aria-hidden="true"></span> Poker Tour
       </a>
+      <a class="nav-item" href="{{ '/app/' | relative_url }}">
+        <span class="nav-icon ff-icon ff-icon-calendar-day" aria-hidden="true"></span> Tournament Console
+      </a>
       <a class="nav-item" href="{{ '/leaderboard/' | relative_url }}">
         <span class="nav-icon ff-icon ff-icon-trophy" aria-hidden="true"></span> Leaderboard
       </a>
