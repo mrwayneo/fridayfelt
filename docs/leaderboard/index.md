@@ -11,12 +11,14 @@ Three points enter the pool for every player, then the full pool is distributed 
 
 | Rank | Player | Played | Wins | Points |
 | ---: | :----- | -----: | ---: | -----: |
+|    1 | Wayneo |      4 |    2 |   18.5 |
 |    2 | Kahlia |      2 |    1 |     12 |
-|    5 | Wayneo |      3 |    1 |     12 |
-|    1 | Miki   |      3 |    1 |  **9** |
-|    3 | KB     |      3 |    0 |      6 |
-|    4 | Ariel  |      3 |    0 |  **5** |
-|    6 | Hudson |      1 |    0 |      1 |
+|    3 | Miki   |      4 |    1 |     10 |
+|    4 | KB     |      4 |    0 |      7 |
+|    5 | Ariel  |      4 |    0 |      7 |
+|    6 | Davey  |      1 |    1 |    6.5 |
+|    7 | Hudson |      1 |    0 |      1 |
+|    8 | Kat    |      1 |    0 |      1 |
 
 ## Point distribution
 

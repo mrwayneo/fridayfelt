@@ -64,8 +64,8 @@ layout: "Null"
       <span class="mini-chip">♠</span>
       <p>Friday Night Poker Tour</p>
       <strong>Season 1</strong>
-      <span>Event 4 of 12</span>
-      <div class="season-progress"><i style="width: 25%"></i></div>
+      <span>Event 5 of 12</span>
+      <div class="season-progress"><i style="width: 40%"></i></div>
     </div>
 
     <p class="sidebar-footer">Good game. Good people.<br>Great memories.</p>
@@ -170,32 +170,42 @@ layout: "Null"
             </div>
             <div class="leader-row is-leader" role="row">
               <span class="rank"><i>1</i></span>
-              <span class="player"><b class="player-avatar avatar-purple">K</b><span><strong>Kahlia</strong><small>1 win</small></span></span>
-              <span>2</span><strong class="points">12</strong>
+              <span class="player"><b class="player-avatar avatar-purple">W</b><span><strong>Wayne</strong><small>2 wins</small></span></span>
+              <span>4</span><strong class="points">18.5</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">2</span>
-              <span class="player"><b class="player-avatar avatar-pink">W</b><span><strong>Wayneo</strong><small>1 win</small></span></span>
+              <span class="player"><b class="player-avatar avatar-pink">K</b><span><strong>Kahlia</strong><small>1 win</small></span></span>
               <span>2</span><strong class="points">12</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">3</span>
               <span class="player"><b class="player-avatar avatar-blue">M</b><span><strong>Miki</strong><small>1 win</small></span></span>
-              <span>2</span><strong class="points">9</strong>
+              <span>4</span><strong class="points">10</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">4</span>
-              <span class="player"><b class="player-avatar avatar-green">K</b><span><strong>KB</strong><small>Best: 3rd</small></span></span>
-              <span>2</span><strong class="points">6</strong>
+              <span class="player"><b class="player-avatar avatar-green">A</b><span><strong>Ariel</strong><small>Best: 3rd</small></span></span>
+              <span>2</span><strong class="points">7</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">5</span>
-              <span class="player"><b class="player-avatar avatar-orange">A</b><span><strong>Ariel</strong><small>Best: 3rd</small></span></span>
+              <span class="player"><b class="player-avatar avatar-orange">K</b><span><strong>KB</strong><small>Best: 3rd</small></span></span>
               <span>1</span><strong class="points">5</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">6</span>
+              <span class="player"><b class="player-avatar avatar-orange">D</b><span><strong>Davey</strong><small>1 win</small></span></span>
+              <span>1</span><strong class="points">6.5</strong>
+            </div>
+            <div class="leader-row" role="row">
+              <span class="rank">7</span>
               <span class="player"><b class="player-avatar avatar-orange">H</b><span><strong>Hudson</strong><small>Best: 6th</small></span></span>
+              <span>1</span><strong class="points">1</strong>
+            </div>
+            <div class="leader-row" role="row">
+              <span class="rank">8</span>
+              <span class="player"><b class="player-avatar avatar-orange">K</b><span><strong>Kat</strong><small>Best: 4th</small></span></span>
               <span>1</span><strong class="points">1</strong>
             </div>
           </div>
