@@ -162,7 +162,7 @@ layout: "Null"
               <span class="live-pill"><i></i> CURRENT STANDINGS</span>
               <h3>Season 1 Leaderboard</h3>
             </div>
-            <span class="updated">After Event 2</span>
+            <span class="updated">After Event 4</span>
           </div>
           <div class="leaderboard" role="table" aria-label="Season 1 leaderboard">
             <div class="leader-row leaderboard-head" role="row">
@@ -186,12 +186,12 @@ layout: "Null"
             <div class="leader-row" role="row">
               <span class="rank">4</span>
               <span class="player"><b class="player-avatar avatar-green">A</b><span><strong>Ariel</strong><small>Best: 3rd</small></span></span>
-              <span>2</span><strong class="points">7</strong>
+              <span>4</span><strong class="points">7</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">5</span>
               <span class="player"><b class="player-avatar avatar-orange">K</b><span><strong>KB</strong><small>Best: 3rd</small></span></span>
-              <span>1</span><strong class="points">5</strong>
+              <span>4</span><strong class="points">5</strong>
             </div>
             <div class="leader-row" role="row">
               <span class="rank">6</span>
@@ -223,7 +223,7 @@ layout: "Null"
           <h3>Friday Night Poker #4</h3>
           <p class="event-subtitle">The cards are almost in the air.</p>
           <dl class="event-details">
-            <div><dt>Date</dt><dd>Friday, 31 July</dd></div>
+            <div><dt>Date</dt><dd>Friday, 14 August</dd></div>
             <div><dt>Cards in the air</dt><dd>7:00 pm</dd></div>
             <div><dt>Starting stack</dt><dd>2,100</dd></div>
             <div><dt>Blind levels</dt><dd>20 minutes</dd></div>

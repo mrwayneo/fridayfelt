@@ -6,14 +6,14 @@ description: Details for the next Friday Night Poker Tour event.
 permalink: /tour/next-event/
 ---
 
-# Friday Night Poker #4
+# Friday Night Poker #5
 
 The cards are almost in the air.
 {: .ff-page-intro }
 
 | Detail           | Event information         |
 | :--------------- | :------------------------ |
-| Date             | Friday, 31 July 2026      |
+| Date             | Friday, 14 August 2026    |
 | Cards in the air | 7:00 pm                   |
 | Starting stack   | 2,100                     |
 | Blind levels     | 15 minutes                |
